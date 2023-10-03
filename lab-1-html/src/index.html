@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2.1 - HTML</title>
+    <meta charset="UTF-8">
+    <meta description="A simple HTML excercise">
+    <meta keywords="HTML, excercise, tags">
+    <meta author="Richard Brazao">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 5px;
+      }
+  </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="/form.html">Form</a>
+      </nav>
+    </header>
+    <div>Toyota</div>
+    <div>Nissan</div>
+    <div>Ford</div>
+    <span>Toyotas are great for modding,</span> <span>Nissans are Toyota wannabe's,</span> <span>Fords want to be both!</span>
+    <p>p represents paragraph.</p>
+    <pre>Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks.</pre>
+    <h1>Toyota Variants & Models</h1>
+    <article>
+      <ul>
+        <li>4x4</li>
+        <li>SUV</li>
+        <li>Sedan</li>
+        <li>Hatchback</li>
+      </ul>
+      <ol>
+        <li>Land Cruiser</li>
+        <li>RAV4</li>
+        <li>Camry</li>
+        <li>Corolla</li>
+      </ol>
+    </article>
+    <article>
+      <h2>Toyota - Pros & Cons</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pros</th>
+            <th colspan="2">Cons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reliable</td>
+            <td>Expensive</td>
+            <td>Expensive Parts</td>
+          </tr>
+          <tr>
+            <td>Good resale value</td>
+            <td>Expensive services</td>
+            <td rowspan="2">Expensive Repairs</td>
+          </tr>
+          <tr>
+            <td>Great to Drive</td>
+            <td>Petrol not Economical</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <article>
+      <h2>Nissan & Ford... The Challengers</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in eleifend orci.<br>Nam commodo risus velit, a iaculis est interdum non. Duis efficitur iaculis consequat.<br>Integer lorem felis, imperdiet at ipsum eget, rutrum elementum est.</p>
+    </article>
+      <img src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_675,q_auto:eco,w_1200/v1/cms/uploads/m8Tjg81gR92zPnphm5Y0" alt="Brands Compared Image" style="width: 50%;">
+      <video width="250" autoplay="true" controls="true" loop="true">
+        <source src="/assets/flower.webm"
+        type="video/webm"/>
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <audio controls autoplay muted>
+        <source src="/assets/t-rex-roar.mp3"/>
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+    <main>
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>

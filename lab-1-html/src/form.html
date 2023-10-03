@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="/index.html">Index</a>
+      </nav>
+      <div>
+        <form method="post" action="http://localhost:3000/profile">
+          <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+          <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+          <div style="margin-top: 5px; margin-bottom: 5px; font-weight: bold;">Favourite Car Brands</div>
+          <input type="radio" id="Toyota" name="fav_carbrand" value="Toyota">
+            <label for="Totoya">Toyota</label>
+          <input type="radio" id="Nissan" name="fav_carbrand" value="Nissan">
+            <label for="Nissan">Nissan</label>
+          <input type="radio" id="Ford" name="fav_carbrand" value="Ford">
+            <label for="Ford">Ford</label>
+          <input type="radio" id="Other" name="fav_carbrand" value="Other">
+           <label for="Other">Other</label>
+          
+          <div style="margin-top: 5px; margin-bottom: 5px; font-weight: bold;">Favourite Car Variants</div>
+          <input type="checkbox" id="fav_variant1" name="fav_variant1" value="4x4">
+            <label for="fav_variant1"> 4x4</label><br>
+          <input type="checkbox" id="fav_variant2" name="fav_variant2" value="SUV">
+            <label for="fav_variant2"> SUV</label><br>
+          <input type="checkbox" id="fav_variant3" name="fav_variant3" value="Sedan">
+            <label for="fav_variant3"> Sedan</label><br>
+          <input type="checkbox" id="fav_variant4" name="fav_variant4" value="Hatchback">
+           <label for="fav_variant4"> Hatchback</label>
+          
+          <div style="margin-top: 5px; margin-bottom: 5px; font-weight: bold;"> Other Brand Options</div>
+          <label for="other_cars">Choose your "other" options:</label>
+          <select name="other_cars" id="other_cars" style="margin-bottom: 5px;">
+            <option value="Holden">Holden</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volkswagen">Volkswagen</option>
+          </select><br>
+          <button type="submit" style="margin-top: 5px; margin-bottom: 20px;">Submit form</button>
+        </form>
+      </div>
+    </header>
+    <main>
+    </main>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
