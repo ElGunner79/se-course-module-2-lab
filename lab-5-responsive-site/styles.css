@@ -45,20 +45,19 @@ main {
     /* border: 1px solid red; */
 }
 
-footer {
+/* footer {
     flex: 1;
     height: 100%;
-    /* border: 1px solid blue; */
-}
+} */
 
-.footer {
+/* .footer {
     color: var(--onyx);
     font-size: 14px;
     font-weight: 500;
     padding: 10px  10px;
     text-align: center;
     height: 20px;
-  }
+  } */
 
 .flex-container-1 {
     background-color: var(--onyx);
@@ -187,8 +186,14 @@ footer {
     letter-spacing:1px;
   }
 
-  @media (max-width: 425px) {
-    .flex-item-1{
-        min-width: 26%;
+  @media screen and (min-width: 480px) {
+    .flex-container-2 {
+      align-items:center
+    }
+  }
+    
+   @media screen and (min-width: 850px) {
+    .flex-container-2 {
+      align-items:center
     }
   }
