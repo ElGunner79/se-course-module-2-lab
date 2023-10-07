@@ -72,6 +72,7 @@
         bottom: 0;
       }
       /* IV. Styling text */
+
       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
     
       .text-style {
@@ -86,11 +87,33 @@
         text-decoration: underline;
       }
 
-      a {
-        color: chocolate;
+      /* V. Styling Links */
+
+      a:link {
+        color: red; text-decoration: none;
+      }
+
+      a:visited {
+        color: green; text-decoration: none;
+      }
+
+      a:hover {
+        color: hotpink;
+      }
+
+      a:active {
+        color:blue; text-decoration: underline;
+      }
+
+      a:focus {
+        text-decoration: line-through;
       }
 
       /* VI. calc() */
+
+      .calc-style {
+        font-size: 14px; /* width: 100vw;*/ /*width: 100vw - 100px;*/ width: 100%;
+      }
 
     </style>
   </head>
@@ -178,11 +201,9 @@
 
     <article>
       <h2>V. Styling links</h2>
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links"
-        alt="Styling links with Mozilla"
-        >Styling links (Mozilla)</a
-      >
+      <a href="https://www.goggle.com"alt="Google home page"target=blank>1. Google.com></a><br>
+      <a href="https://www.google.com"alt="Google home page"target=blank>2. Google.com></a>
+      
     </article>
 
     <article>
