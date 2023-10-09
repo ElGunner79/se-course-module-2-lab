@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: var(--platinum);
+    background-color: var(--onyx);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,8 +100,6 @@ main {
     background: var(--cerulean);
     flex: 1;
     padding: 10px;
-    flex-basis: content;
-    /* height: 100%; */
     /* border: 1px solid blue; */
   }
 
@@ -109,8 +107,6 @@ main {
     background: var(--moss-green);
     flex: 1;
     padding: 10px;
-    flex-basis: content;
-    /* height: 100%; */
     /* border: 1px solid blue; */
   }
 
@@ -186,14 +182,16 @@ main {
     letter-spacing:1px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 725px) {
     .flex-container-2 {
-      align-items:center
+        flex-direction: column; /* Change to a single column layout for flex-item 3 and 4, small screens*/
     }
   }
-    
-   @media screen and (min-width: 850px) {
-    .flex-container-2 {
-      align-items:center
+
+  @media screen and (max-width: 725px) {
+    .flex-item-3, .flex-item-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* align items to centre for flex-item 3 and 4, small screens*/
     }
   }
